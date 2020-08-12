@@ -5,7 +5,7 @@ Itmes Manage
 - create controller (--resource)
 - show route list (route:list)
 - create blade (4 for GET mehtods)
-- cal specified veiw from method
+- call specified veiw from method
 - use store method (form action)
 	- dd()
 	- validation
