@@ -1,0 +1,15 @@
+Itmes Manage
+--------
+
+- create resource route
+- create controller (--resource)
+- show route list (route:list)
+- create blade (4 for GET mehtods)
+- cal specified veiw from method
+- use store method (form action)
+	- dd()
+	- validation
+	- if include image, upload 
+	- data insert
+	- redirect -> (index)
+-show in database
