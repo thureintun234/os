@@ -13,3 +13,52 @@ Itmes Manage
 	- data insert
 	- redirect -> (index)
 -show in database
+
+
+Brands Manage
+---------
+
+- create resource route
+- create controller (--resource)
+- show route list (route:list)
+- create blade (4 for GET mehtods)
+- call specified veiw from method
+- use store method (form action)
+	- dd()
+	- validation
+	- if include image, upload 
+	- data insert
+	- redirect -> (index)
+-show in database
+
+
+Categories Manage
+----------
+
+- create resource route
+- create controller (--resource)
+- show route list (route:list)
+- create blade (4 for GET mehtods)
+- call specified veiw from method
+- use store method (form action)
+	- dd()
+	- validation
+	- if include image, upload 
+	- data insert
+	- redirect -> (index)
+-show in database
+
+
+Subcategories Manage
+-----------
+- create resource route
+- create controller (--resource)
+- show route list (route:list)
+- create blade (4 for GET mehtods)
+- call specified veiw from method
+- use store method (form action)
+	- dd()
+	- validation
+	- data insert
+	- redirect -> (index)
+-show in database
