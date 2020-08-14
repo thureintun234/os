@@ -30,6 +30,14 @@
 							<td>Product Description</td>
 							<td>{{$item->description}}</td>
 						</tr>
+						<tr>
+							<td>Brand</td>
+							<td>{{$item->brand->name}}</td>
+						</tr>
+						<tr>
+							<td>Subcategory</td>
+							<td>{{$item->subcategory->name}}</td>
+						</tr>
 				</table>
 			</div>
 		</div>

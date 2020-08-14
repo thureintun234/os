@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Item;
 use App\Brand;
 use App\Subcategory;
+// use UxWeb\SweetAlert\SweetAlert;
+// use Alert;
 
 class ItemController extends Controller
 {
@@ -31,6 +33,7 @@ class ItemController extends Controller
     {
         $brands = Brand::all();
         $subcategories = Subcategory::all();
+
         return view('backend.items.create',compact('brands','subcategories'));
     }
 
@@ -42,6 +45,7 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+
         // dd($request);
 
         //validate
@@ -75,6 +79,9 @@ class ItemController extends Controller
         $item->subcategory_id = $request->subcategory;
 
         $item->save();
+
+        // SweetAlert::success('Success Message', 'Optional Title');
+        // alert()->success('You have been logged out.', 'Good bye!');
 
         //Redirect
         return redirect()->route('items.index');
@@ -138,7 +145,8 @@ class ItemController extends Controller
             $myfile = 'backend/itemimg/'.$imageName;
 
             //delete old photo
-            // File::delete(public_path() . '/backend/itemimg/', $myfile->request->imageName);
+            unlink($request->oldphoto);
+
 
         }else{
             $myfile = $request->oldphoto;
@@ -171,6 +179,7 @@ class ItemController extends Controller
     {
         $item = Item::find($id);
         $item->delete();
+        unlink($item->photo);
 
         //redirect
         return redirect()->route('items.index');

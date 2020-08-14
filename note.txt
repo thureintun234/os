@@ -62,3 +62,22 @@ Subcategories Manage
 	- data insert
 	- redirect -> (index)
 -show in database
+
+
+13-8-2020
+----------
+- List, Edit, Delete (brand)
+- Validation Error, Delete Image(old) when update,
+- only brand
+
+UI
+--
+- filter item page
+- item detail
+- checkout page
+- profile page
+- register page
+- login page
+
+
+
