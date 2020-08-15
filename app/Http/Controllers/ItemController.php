@@ -8,6 +8,7 @@ use App\Brand;
 use App\Subcategory;
 // use UxWeb\SweetAlert\SweetAlert;
 // use Alert;
+// use SweetAlert;
 
 class ItemController extends Controller
 {
@@ -84,6 +85,8 @@ class ItemController extends Controller
         // alert()->success('You have been logged out.', 'Good bye!');
 
         //Redirect
+        // Alert::success('Success!', 'New Item Inserted Successfully.');
+
         return redirect()->route('items.index');
     }
 

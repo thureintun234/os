@@ -20,7 +20,7 @@
   <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
   {{-- sweet alert --}}
-  <link rel=”stylesheet” href=" https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
 
 </head>
 
@@ -395,10 +395,13 @@
   <script src="{{asset('backend/js/demo/chart-pie-demo.js')}}"></script>
 
   {{-- sweet alert --}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+
   @include('sweet::alert')
 
   @yield('script')
+
+   {{-- @include('sweetalert::alert') --}}
 
 </body>
 

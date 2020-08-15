@@ -72,12 +72,28 @@ Subcategories Manage
 
 UI
 --
-- filter item page
+- filter item page (data binding)
 - item detail
 - checkout page
-- profile page
+- profile page (link / retrieve)
 - register page
 - login page
 
+14-08-2020
+---------
+ Frontend
+	-filter item page (data binding)
+	-profile page (link / retrieve) profile link(homework)
+	-auth (multi role)
+ 
+ //homework
+ Backend
+ 	-Order Retrieve
+ 	-view (backend/orders folder)
+ 	-order folder->(index.blade.php)
+ 	-show table (order list from order table)
+ 	-OrderController / index method use
 
+
+ 	-RUD (category, subcategory)
 

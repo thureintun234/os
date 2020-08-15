@@ -17,4 +17,9 @@ class Order extends Model
     				->withTimestamps();
 
     }
+
+    public function user($value='')
+    {
+    	return $this->belongsTo('App\User');
+    }
 }

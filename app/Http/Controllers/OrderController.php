@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class OrderController extends Controller
 {
@@ -15,7 +16,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::all();
+        $orders = Order::all();
+        return view('backend.orders.index',compact('orders','user'));
     }
 
     /**

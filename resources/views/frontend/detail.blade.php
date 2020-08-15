@@ -5,7 +5,7 @@
 	<h2 class="text-center py-5 text-muted">Item Detail Page</h2>
 	<div class="row">
 		<div class="col-md-4">
-			<img src="{{asset($items->photo)}}" width="300" height="300">
+			<img src=" {{asset($items->photo)}}" width="300" height="300">
 		</div>
 		<div class="col-md-8">
 			<form>
