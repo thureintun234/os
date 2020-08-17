@@ -20,7 +20,7 @@ class CreateItemsTable extends Migration
             $table->integer('price');
             $table->integer('discount');
             $table->text('photo');
-            $table->text('discription');
+            $table->text('description');
             $table->unsignedBigInteger('brand_id');
             $table->unsignedBigInteger('subcategory_id');
             $table->timestamps();
