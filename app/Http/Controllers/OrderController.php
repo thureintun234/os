@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+// use App\Item;
 
 class OrderController extends Controller
 {
@@ -75,7 +76,8 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::find($id);
+         return view('backend.orders.show',compact('order',));
     }
 
     /**
