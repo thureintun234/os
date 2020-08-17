@@ -119,3 +119,13 @@ UI
 -cp .env.example .env
 -composer install
 -php artisan key:generate
+
+
+-create database and user
+-php artisan migrate
+-php artisan db:seed
+-change db-name,user,pw in env file
+-add hashfile (change name in file)
+
+
+
