@@ -97,3 +97,13 @@ UI
 
  	-RUD (category, subcategory)
 
+
+ 17-08-2020
+ ----------
+ Frontend
+	-filter item page (data binding)
+	-profile UI
+	-if no t include (sidebar), center
+
+ Backend
+	-order detail
